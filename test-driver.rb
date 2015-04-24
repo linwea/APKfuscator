@@ -16,6 +16,8 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+
+$LOAD_PATH.unshift(File.dirname(__FILE__)) unless $LOAD_PATH.include?(File.dirname(__FILE__)) 
 require 'apkfuscator.rb'
 
 dex_file = DexFile.new 'resources/release-crackme-classes.dex', false
