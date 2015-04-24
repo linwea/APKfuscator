@@ -16,6 +16,8 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+$LOAD_PATH.unshift(File.dirname(__FILE__)) unless $LOAD_PATH.include?(File.dirname(__FILE__)) 
+
 require 'rubygems'
 require 'zlib' # Required for checksum (adler32)
 require 'digest/sha1' # Required for signature
